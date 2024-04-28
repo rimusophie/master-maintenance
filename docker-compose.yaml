@@ -1,0 +1,19 @@
+services:
+  app:
+    container_name: master-maintainance-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    environment:
+      - NODE_ENV=development
+    volumes:
+    - .:/var/www/html
+    - node_modules:/var/www/html/master-maintainance/node_modules
+    #- vendor:/var/www/vendor
+    #- storage:/var/www/storage
+    #command: sh -c "cd vue-sample && npm run serve"
+    ports:
+    - 5173:5173
+volumes:
+  node_modules:
