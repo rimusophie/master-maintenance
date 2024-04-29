@@ -20,6 +20,13 @@ export default defineConfig({
     port: 5173,
     watch: {
       usePolling: true
+    },
+    proxy: {
+      '/api': {
+        target: 'http://rmsapi:8000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      }
     }
   }
 })

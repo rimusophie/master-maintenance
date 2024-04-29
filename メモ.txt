@@ -1,0 +1,9 @@
+APIを飛ばす先が
+dockerの場合、docker-compose.yamlにnetworksにバックエンド側のコンテナのネットワーク名を登録する。
+
+ネットワーク名の確認
+docker inspect バックエンドのコンテナ名
+Networksの先頭の項目がネットワーク名
+xxx_defaultのような名前
+
+vite.config.tsにproxy設定を行う。

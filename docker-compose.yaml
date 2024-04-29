@@ -15,5 +15,10 @@ services:
     #command: sh -c "cd vue-sample && npm run serve"
     ports:
     - 5173:5173
+    networks:
+    - rmsapi_default
 volumes:
   node_modules:
+networks:
+  rmsapi_default:
+    external: true
