@@ -25,10 +25,10 @@ const getDatas = (): void => {
 
 <template>
 <div>
-    <table border="1">
+    <table class="table table-dark table-sm table-design mt-3">
         <thead>
-            <td>ID</td>
-            <td>名称</td>
+            <th>ID</th>
+            <th>名称</th>
         </thead>
 
         <tbody>

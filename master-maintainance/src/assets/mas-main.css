@@ -1,0 +1,16 @@
+@import './base.css';
+
+:root {
+  --header-background-color: var(--mas-main-background-color);
+  --footer-background-color: var(--mas-main-background-color);
+
+  --border-color: #ffffff;
+  --table-background-color: rgba(15, 4, 24, 0.5);
+}
+
+.table-design {
+    background-color: var(--table-background-color);
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: var(--border-color);
+}

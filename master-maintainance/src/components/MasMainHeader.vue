@@ -3,18 +3,15 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <div class="container bg-info mb-3">
+    <div>
         <div class="row">
+            <div class="col">
             テスト
+            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
-.header-button {
-    width: 100%;
-}
-.link-text {
-    color: white;
-}
+
 </style>
