@@ -3,15 +3,18 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <div>
+    <div class="container">
         <div class="row">
             <div class="col">
-            テスト
+                <RouterLink v-bind:to="{name: 'home'}"><button class="btn header-design w-100">テーブル一覧</button></RouterLink>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
-
+.header-design {
+    background-color:rgb(134, 71, 79);
+    color: var(--color-text);
+}
 </style>

@@ -4,13 +4,57 @@
   --header-background-color: var(--mas-main-background-color);
   --footer-background-color: var(--mas-main-background-color);
 
-  --border-color: #ffffff;
+  --border-color: #e0e0e0;
   --table-background-color: rgba(15, 4, 24, 0.5);
+
+  --border-radius: 4px;
 }
 
 .table-design {
-    background-color: var(--table-background-color);
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: var(--border-color);
+  border-collapse: separate;
+  border-spacing: 0.2rem;
+}
+
+.table-design th,
+.table-design td
+{
+  color: var(--color-text);
+  border-style: none;
+}
+
+.table-design th {
+  color: var(--color-text);
+  background-color: rgba(107, 26, 79, 0.61);
+  border-radius: var(--border-radius);
+}
+
+.table-design td {
+  color: var(--color-text);
+  background-color: rgba(90, 26, 116, 0.342);
+  border-radius: var(--border-radius);
+}
+
+.btn-design {
+  color: var(--color-text);
+  background-color: rgb(109, 95, 95);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+}
+
+.text-design {
+  color: var(--color-text);
+  background-color: rgb(54, 16, 71);
+  border-color: rgb(124, 55, 156);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+}
+.text-design:focus {
+  color: var(--color-text);
+  background-color: rgb(85, 42, 105);
+  border-color: rgb(113, 0, 170);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
 }
