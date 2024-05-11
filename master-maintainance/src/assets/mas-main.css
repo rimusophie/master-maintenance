@@ -34,12 +34,28 @@
   border-radius: var(--border-radius);
 }
 
-.btn-design {
+/* ボタン共通 */
+.btn-common-design {
   color: var(--color-text);
-  background-color: rgb(109, 95, 95);
   border-style: solid;
   border-width: 1px;
   border-radius: var(--border-radius);
+}
+
+/* ボタン通常 */
+.btn-normal-design {
+  background-color: rgb(109, 95, 95);
+}
+.btn-normal-design:hover {
+  background-color: rgb(87, 76, 76);
+}
+
+/* ボタン特殊 */
+.btn-alert-design {
+  background-color: rgb(170, 26, 26);
+}
+.btn-alert-design:hover {
+  background-color: rgb(121, 12, 12);
 }
 
 .text-design {
@@ -57,4 +73,20 @@
   border-style: solid;
   border-width: 1px;
   border-radius: var(--border-radius);
+}
+
+.combobox-design {
+  color: var(--color-text);
+  background-color: rgb(54, 16, 71);
+  border-color: rgb(124, 55, 156);
+}
+
+.check-th-width {
+  width: 2rem;
+}
+
+.h-design {
+  background-color: rgb(78, 3, 13);
+  border-radius: var(--border-radius);
+  font-size: x-large;
 }
